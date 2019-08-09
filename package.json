@@ -1,0 +1,25 @@
+{
+  "name": "my-first-repository",
+  "version": "1.0.0",
+  "description": "This is my first repository",
+  "main": "wave.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickBardoBts/My-First-Repository.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erickBardoBts/My-First-Repository/issues"
+  },
+  "homepage": "https://github.com/erickBardoBts/My-First-Repository#readme",
+  "dependencies": {
+    "npx": "^10.2.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}

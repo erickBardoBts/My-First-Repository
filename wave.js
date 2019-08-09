@@ -1,10 +1,8 @@
-const testInput = "word"
-const test2 = "two words"
 // function wave(word){
 //   let mexWave = []
 //   for(let i = 0; i < word.length; i++){
 //     let split = word.split('')
-//     if(split[i] === " "){
+//     if(split[i] === " "){ //No contempla si en vez de espacio es cualquier otro caracter.
 //       continue
 //     }
 //     split[i] = split[i].toUpperCase()
@@ -12,6 +10,7 @@ const test2 = "two words"
 //   }
 //   return mexWave
 // }
+console.log(wave("ole putoooooo!!"))
 /**--------Cool refactor-----thanks codewars------- */
 function wave(str){
   let wave = []
@@ -21,9 +20,7 @@ function wave(str){
   });
   return wave
 };
-console.log(wave("erick es maravilloso"))
 
 module.exports = wave;
 
 
-console.log(/[a-z]/.test("a"))
