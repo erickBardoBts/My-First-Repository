@@ -56,7 +56,7 @@ Example scoring
         else if(currency[''+i] > 3){
           score += 1000 + (100 * (currency[''+i]-3))
         }
-        else if(currency[''+i] < 3){
+        else if(currency[''+i] <= 2){
           score += 100 * currency[''+i]
         }
       }
@@ -71,12 +71,15 @@ Example scoring
           score += 50 * currency[''+i]
         }
       } 
+      else if(i !== 5 && i !== 1 && currency[''+i] >= 3){
+        score += 100 * i
+      }
      };
      return score
 };
 // console.log(score([1,1,1,1,1]))
-// console.log(score([5,5,5,5,5]))
-console.log(score([1,1,1,2,3]))
+// console.log(score([2,2,2,2,2]))
+console.log(score([1,1,1,1,3]))
 // console.log(score([2,4,4,5,4]))
 // console.log(score([3,3,3,5,1]))
 module.exports = score;
